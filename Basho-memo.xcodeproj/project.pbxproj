@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21366A8F18C513C600BE1010 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21366A8D18C513C600BE1010 /* MainStoryboard.storyboard */; };
+		21366A9018C5149400BE1010 /* Basho-memo-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21F5BEF018C5039800B40EF3 /* Basho-memo-Info.plist */; };
+		21366A9218C514BD00BE1010 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21366A9118C514BD00BE1010 /* MapKit.framework */; };
+		21366A9518C6184500BE1010 /* MemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21366A9418C6184500BE1010 /* MemoTableViewCell.m */; };
+		21366A9B18C63FD700BE1010 /* ShowMemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21366A9A18C63FD700BE1010 /* ShowMemoViewController.m */; };
+		2194BF1218C7957A002C55D0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2194BF1118C7957A002C55D0 /* CoreLocation.framework */; };
+		21F5BEE718C5039800B40EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEE618C5039800B40EF3 /* Foundation.framework */; };
+		21F5BEE918C5039800B40EF3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEE818C5039800B40EF3 /* CoreGraphics.framework */; };
+		21F5BEEB18C5039800B40EF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEEA18C5039800B40EF3 /* UIKit.framework */; };
+		21F5BEED18C5039800B40EF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEEC18C5039800B40EF3 /* CoreData.framework */; };
+		21F5BEF318C5039800B40EF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F5BEF118C5039800B40EF3 /* InfoPlist.strings */; };
+		21F5BEF518C5039800B40EF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BEF418C5039800B40EF3 /* main.m */; };
+		21F5BEF918C5039800B40EF3 /* _0rceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BEF818C5039800B40EF3 /* _0rceAppDelegate.m */; };
+		21F5BEFC18C5039800B40EF3 /* Basho_memo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BEFA18C5039800B40EF3 /* Basho_memo.xcdatamodeld */; };
+		21F5BEFE18C5039800B40EF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F5BEFD18C5039800B40EF3 /* Images.xcassets */; };
+		21F5BF0518C5039800B40EF3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BF0418C5039800B40EF3 /* XCTest.framework */; };
+		21F5BF0618C5039800B40EF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEE618C5039800B40EF3 /* Foundation.framework */; };
+		21F5BF0718C5039800B40EF3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEEA18C5039800B40EF3 /* UIKit.framework */; };
+		21F5BF0818C5039800B40EF3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F5BEEC18C5039800B40EF3 /* CoreData.framework */; };
+		21F5BF1018C5039800B40EF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21F5BF0E18C5039800B40EF3 /* InfoPlist.strings */; };
+		21F5BF1218C5039800B40EF3 /* Basho_memoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF1118C5039800B40EF3 /* Basho_memoTests.m */; };
+		21F5BF2918C5046400B40EF3 /* _0rceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF1C18C5046400B40EF3 /* _0rceViewController.m */; };
+		21F5BF2A18C5046400B40EF3 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF1E18C5046400B40EF3 /* MapViewController.m */; };
+		21F5BF2B18C5046400B40EF3 /* MapViewDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF2018C5046400B40EF3 /* MapViewDataController.m */; };
+		21F5BF2D18C5046400B40EF3 /* MemoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF2418C5046400B40EF3 /* MemoData.m */; };
+		21F5BF2E18C5046400B40EF3 /* MemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF2618C5046400B40EF3 /* MemoViewController.m */; };
+		21F5BF2F18C5046400B40EF3 /* SetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F5BF2818C5046400B40EF3 /* SetupViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21F5BF0918C5039800B40EF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21F5BEDB18C5039800B40EF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F5BEE218C5039800B40EF3;
+			remoteInfo = "Basho-memo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21366A8E18C513C600BE1010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		21366A9118C514BD00BE1010 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		21366A9318C6184500BE1010 /* MemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewCell.h; sourceTree = "<group>"; };
+		21366A9418C6184500BE1010 /* MemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewCell.m; sourceTree = "<group>"; };
+		21366A9918C63FD700BE1010 /* ShowMemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowMemoViewController.h; sourceTree = "<group>"; };
+		21366A9A18C63FD700BE1010 /* ShowMemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowMemoViewController.m; sourceTree = "<group>"; };
+		2194BF1118C7957A002C55D0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		21F5BEE318C5039800B40EF3 /* Basho-memo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basho-memo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F5BEE618C5039800B40EF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21F5BEE818C5039800B40EF3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21F5BEEA18C5039800B40EF3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21F5BEEC18C5039800B40EF3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		21F5BEF018C5039800B40EF3 /* Basho-memo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Basho-memo-Info.plist"; sourceTree = "<group>"; };
+		21F5BEF218C5039800B40EF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21F5BEF418C5039800B40EF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21F5BEF618C5039800B40EF3 /* Basho-memo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Basho-memo-Prefix.pch"; sourceTree = "<group>"; };
+		21F5BEF718C5039800B40EF3 /* _0rceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _0rceAppDelegate.h; sourceTree = "<group>"; };
+		21F5BEF818C5039800B40EF3 /* _0rceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _0rceAppDelegate.m; sourceTree = "<group>"; };
+		21F5BEFB18C5039800B40EF3 /* Basho_memo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Basho_memo.xcdatamodel; sourceTree = "<group>"; };
+		21F5BEFD18C5039800B40EF3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21F5BF0318C5039800B40EF3 /* Basho-memoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Basho-memoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F5BF0418C5039800B40EF3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21F5BF0D18C5039800B40EF3 /* Basho-memoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Basho-memoTests-Info.plist"; sourceTree = "<group>"; };
+		21F5BF0F18C5039800B40EF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21F5BF1118C5039800B40EF3 /* Basho_memoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Basho_memoTests.m; sourceTree = "<group>"; };
+		21F5BF1B18C5046400B40EF3 /* _0rceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _0rceViewController.h; sourceTree = "<group>"; };
+		21F5BF1C18C5046400B40EF3 /* _0rceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _0rceViewController.m; sourceTree = "<group>"; };
+		21F5BF1D18C5046400B40EF3 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		21F5BF1E18C5046400B40EF3 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		21F5BF1F18C5046400B40EF3 /* MapViewDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewDataController.h; sourceTree = "<group>"; };
+		21F5BF2018C5046400B40EF3 /* MapViewDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewDataController.m; sourceTree = "<group>"; };
+		21F5BF2318C5046400B40EF3 /* MemoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoData.h; sourceTree = "<group>"; };
+		21F5BF2418C5046400B40EF3 /* MemoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoData.m; sourceTree = "<group>"; };
+		21F5BF2518C5046400B40EF3 /* MemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoViewController.h; sourceTree = "<group>"; };
+		21F5BF2618C5046400B40EF3 /* MemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoViewController.m; sourceTree = "<group>"; };
+		21F5BF2718C5046400B40EF3 /* SetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetupViewController.h; sourceTree = "<group>"; };
+		21F5BF2818C5046400B40EF3 /* SetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetupViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21F5BEE018C5039800B40EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2194BF1218C7957A002C55D0 /* CoreLocation.framework in Frameworks */,
+				21366A9218C514BD00BE1010 /* MapKit.framework in Frameworks */,
+				21F5BEE918C5039800B40EF3 /* CoreGraphics.framework in Frameworks */,
+				21F5BEED18C5039800B40EF3 /* CoreData.framework in Frameworks */,
+				21F5BEEB18C5039800B40EF3 /* UIKit.framework in Frameworks */,
+				21F5BEE718C5039800B40EF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F5BF0018C5039800B40EF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F5BF0518C5039800B40EF3 /* XCTest.framework in Frameworks */,
+				21F5BF0818C5039800B40EF3 /* CoreData.framework in Frameworks */,
+				21F5BF0718C5039800B40EF3 /* UIKit.framework in Frameworks */,
+				21F5BF0618C5039800B40EF3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21F5BEDA18C5039800B40EF3 = {
+			isa = PBXGroup;
+			children = (
+				21F5BEEE18C5039800B40EF3 /* Basho-memo */,
+				21F5BF0B18C5039800B40EF3 /* Basho-memoTests */,
+				21F5BEE518C5039800B40EF3 /* Frameworks */,
+				21F5BEE418C5039800B40EF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21F5BEE418C5039800B40EF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21F5BEE318C5039800B40EF3 /* Basho-memo.app */,
+				21F5BF0318C5039800B40EF3 /* Basho-memoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21F5BEE518C5039800B40EF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2194BF1118C7957A002C55D0 /* CoreLocation.framework */,
+				21366A9118C514BD00BE1010 /* MapKit.framework */,
+				21F5BEE618C5039800B40EF3 /* Foundation.framework */,
+				21F5BEE818C5039800B40EF3 /* CoreGraphics.framework */,
+				21F5BEEA18C5039800B40EF3 /* UIKit.framework */,
+				21F5BEEC18C5039800B40EF3 /* CoreData.framework */,
+				21F5BF0418C5039800B40EF3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21F5BEEE18C5039800B40EF3 /* Basho-memo */ = {
+			isa = PBXGroup;
+			children = (
+				21366A8D18C513C600BE1010 /* MainStoryboard.storyboard */,
+				21F5BF1B18C5046400B40EF3 /* _0rceViewController.h */,
+				21F5BF1C18C5046400B40EF3 /* _0rceViewController.m */,
+				21F5BF1D18C5046400B40EF3 /* MapViewController.h */,
+				21F5BF1E18C5046400B40EF3 /* MapViewController.m */,
+				21F5BF1F18C5046400B40EF3 /* MapViewDataController.h */,
+				21F5BF2018C5046400B40EF3 /* MapViewDataController.m */,
+				21F5BF2318C5046400B40EF3 /* MemoData.h */,
+				21F5BF2418C5046400B40EF3 /* MemoData.m */,
+				21F5BF2518C5046400B40EF3 /* MemoViewController.h */,
+				21F5BF2618C5046400B40EF3 /* MemoViewController.m */,
+				21F5BF2718C5046400B40EF3 /* SetupViewController.h */,
+				21F5BF2818C5046400B40EF3 /* SetupViewController.m */,
+				21F5BEF718C5039800B40EF3 /* _0rceAppDelegate.h */,
+				21F5BEF818C5039800B40EF3 /* _0rceAppDelegate.m */,
+				21366A9318C6184500BE1010 /* MemoTableViewCell.h */,
+				21366A9418C6184500BE1010 /* MemoTableViewCell.m */,
+				21F5BEFD18C5039800B40EF3 /* Images.xcassets */,
+				21F5BEFA18C5039800B40EF3 /* Basho_memo.xcdatamodeld */,
+				21366A9918C63FD700BE1010 /* ShowMemoViewController.h */,
+				21366A9A18C63FD700BE1010 /* ShowMemoViewController.m */,
+				21F5BEEF18C5039800B40EF3 /* Supporting Files */,
+			);
+			path = "Basho-memo";
+			sourceTree = "<group>";
+		};
+		21F5BEEF18C5039800B40EF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F5BEF418C5039800B40EF3 /* main.m */,
+				21F5BEF018C5039800B40EF3 /* Basho-memo-Info.plist */,
+				21F5BEF118C5039800B40EF3 /* InfoPlist.strings */,
+				21F5BEF618C5039800B40EF3 /* Basho-memo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F5BF0B18C5039800B40EF3 /* Basho-memoTests */ = {
+			isa = PBXGroup;
+			children = (
+				21F5BF1118C5039800B40EF3 /* Basho_memoTests.m */,
+				21F5BF0C18C5039800B40EF3 /* Supporting Files */,
+			);
+			path = "Basho-memoTests";
+			sourceTree = "<group>";
+		};
+		21F5BF0C18C5039800B40EF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21F5BF0D18C5039800B40EF3 /* Basho-memoTests-Info.plist */,
+				21F5BF0E18C5039800B40EF3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21F5BEE218C5039800B40EF3 /* Basho-memo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F5BF1518C5039800B40EF3 /* Build configuration list for PBXNativeTarget "Basho-memo" */;
+			buildPhases = (
+				21F5BEDF18C5039800B40EF3 /* Sources */,
+				21F5BEE018C5039800B40EF3 /* Frameworks */,
+				21F5BEE118C5039800B40EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Basho-memo";
+			productName = "Basho-memo";
+			productReference = 21F5BEE318C5039800B40EF3 /* Basho-memo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21F5BF0218C5039800B40EF3 /* Basho-memoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21F5BF1818C5039800B40EF3 /* Build configuration list for PBXNativeTarget "Basho-memoTests" */;
+			buildPhases = (
+				21F5BEFF18C5039800B40EF3 /* Sources */,
+				21F5BF0018C5039800B40EF3 /* Frameworks */,
+				21F5BF0118C5039800B40EF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21F5BF0A18C5039800B40EF3 /* PBXTargetDependency */,
+			);
+			name = "Basho-memoTests";
+			productName = "Basho-memoTests";
+			productReference = 21F5BF0318C5039800B40EF3 /* Basho-memoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21F5BEDB18C5039800B40EF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = 40rce;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = 40rce;
+				TargetAttributes = {
+					21F5BF0218C5039800B40EF3 = {
+						TestTargetID = 21F5BEE218C5039800B40EF3;
+					};
+				};
+			};
+			buildConfigurationList = 21F5BEDE18C5039800B40EF3 /* Build configuration list for PBXProject "Basho-memo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21F5BEDA18C5039800B40EF3;
+			productRefGroup = 21F5BEE418C5039800B40EF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21F5BEE218C5039800B40EF3 /* Basho-memo */,
+				21F5BF0218C5039800B40EF3 /* Basho-memoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21F5BEE118C5039800B40EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21366A9018C5149400BE1010 /* Basho-memo-Info.plist in Resources */,
+				21F5BEF318C5039800B40EF3 /* InfoPlist.strings in Resources */,
+				21366A8F18C513C600BE1010 /* MainStoryboard.storyboard in Resources */,
+				21F5BEFE18C5039800B40EF3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F5BF0118C5039800B40EF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F5BF1018C5039800B40EF3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21F5BEDF18C5039800B40EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F5BF2918C5046400B40EF3 /* _0rceViewController.m in Sources */,
+				21366A9518C6184500BE1010 /* MemoTableViewCell.m in Sources */,
+				21F5BEF918C5039800B40EF3 /* _0rceAppDelegate.m in Sources */,
+				21F5BF2A18C5046400B40EF3 /* MapViewController.m in Sources */,
+				21366A9B18C63FD700BE1010 /* ShowMemoViewController.m in Sources */,
+				21F5BF2B18C5046400B40EF3 /* MapViewDataController.m in Sources */,
+				21F5BF2D18C5046400B40EF3 /* MemoData.m in Sources */,
+				21F5BEFC18C5039800B40EF3 /* Basho_memo.xcdatamodeld in Sources */,
+				21F5BEF518C5039800B40EF3 /* main.m in Sources */,
+				21F5BF2F18C5046400B40EF3 /* SetupViewController.m in Sources */,
+				21F5BF2E18C5046400B40EF3 /* MemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21F5BEFF18C5039800B40EF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F5BF1218C5039800B40EF3 /* Basho_memoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21F5BF0A18C5039800B40EF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21F5BEE218C5039800B40EF3 /* Basho-memo */;
+			targetProxy = 21F5BF0918C5039800B40EF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21366A8D18C513C600BE1010 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21366A8E18C513C600BE1010 /* Base */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		21F5BEF118C5039800B40EF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F5BEF218C5039800B40EF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21F5BF0E18C5039800B40EF3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21F5BF0F18C5039800B40EF3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21F5BF1318C5039800B40EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21F5BF1418C5039800B40EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21F5BF1618C5039800B40EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Basho-memo/Basho-memo-Prefix.pch";
+				INFOPLIST_FILE = "Basho-memo/Basho-memo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21F5BF1718C5039800B40EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Basho-memo/Basho-memo-Prefix.pch";
+				INFOPLIST_FILE = "Basho-memo/Basho-memo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		21F5BF1918C5039800B40EF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Basho-memo.app/Basho-memo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Basho-memo/Basho-memo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Basho-memoTests/Basho-memoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21F5BF1A18C5039800B40EF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Basho-memo.app/Basho-memo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Basho-memo/Basho-memo-Prefix.pch";
+				INFOPLIST_FILE = "Basho-memoTests/Basho-memoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21F5BEDE18C5039800B40EF3 /* Build configuration list for PBXProject "Basho-memo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F5BF1318C5039800B40EF3 /* Debug */,
+				21F5BF1418C5039800B40EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F5BF1518C5039800B40EF3 /* Build configuration list for PBXNativeTarget "Basho-memo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F5BF1618C5039800B40EF3 /* Debug */,
+				21F5BF1718C5039800B40EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21F5BF1818C5039800B40EF3 /* Build configuration list for PBXNativeTarget "Basho-memoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21F5BF1918C5039800B40EF3 /* Debug */,
+				21F5BF1A18C5039800B40EF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21F5BEFA18C5039800B40EF3 /* Basho_memo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21F5BEFB18C5039800B40EF3 /* Basho_memo.xcdatamodel */,
+			);
+			currentVersion = 21F5BEFB18C5039800B40EF3 /* Basho_memo.xcdatamodel */;
+			path = Basho_memo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 21F5BEDB18C5039800B40EF3 /* Project object */;
+}
